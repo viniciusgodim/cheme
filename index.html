@@ -16,8 +16,242 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-auto-animate data-background-image="chalk.jpg">
+					<h5>Questão 22 - ENADE 2023 - Engenharia Química</h5>
+
+					<div class="container">
+
+						<div class="col">
+							<div class="question">
+								<div class="animate__fadeInUp animate__slower">
+								
+									Em uma indústria química, é conduzido determinado processo ao qual deve ser adicionado <b class="bold">óleo quente</b>.
+								Para o condicionamento desse fluido, dispõe-se de um <b class="bold">tanque acumulador agitado</b> contendo uma
+								<b class="bold">camisa de aquecimento</b>, conforme demonstrado na figura a seguir.
+								</div>
+							</div>
+							<img class="animate__fadeInUp animate__slower drawing" src="reactor2.svg"  width="400em" \>
+						</div>
+						
+						<div class="col">
+							<div class="question">
+								<p class="animate__fadeInUp animate__slower">Inicialmente, esse tanque continha <span class="red">$m_0 = 50\ \mathrm{kg}$</span> de óleo a <span class="red">$20\ \mathrm{°C}$</span>. Então, as linhas de alimentação e descarga foram abertas, o que permitia o fluxo de óleo à <span class="bold">vazão</span> de <span class="red">$3\ \mathrm{kg/s}$</span>, mantendo-se, portanto, o nível do tanque constante. O <span class="bold">coeficiente global de troca térmica</span>, <span class="red">$U_C$</span> , sugerido pelo fabricante é de <span class="red">$200\ \mathrm{W \ m^{-2} \ K^{-1}}$</span>,
+								a área da camisa de vapor é de <span class="red">$15\ \mathrm{m^2}$</span> e a <span class="bold">capacidade calorífica do óleo</span>, <span class="red">$c_{\mathrm{p,óleo}}$</span> , é de <span class="red">$1{,}5\  \mathrm{kJ\ kg^{-1} \ K^{-1}}$</span>.
+								</p>
+
+								<p class="animate__fadeInUp animate__slower">O balanço de energia de um sistema sem reação, com variação desprezível de energia cinética e potencial e sem trabalho de eixo é dado por
+									
+								$$	\frac{\mathrm{d}U}{\mathrm{d}t} = 
+								\sum{
+									\dot{m_\mathrm{e}} \ h_\mathrm{e}
+								}
+								-\sum{
+									\dot{m_\mathrm{s}} \ h_\mathrm{s}
+								}
+								+ \dot{Q}
+							 $$
+
+								em que: <span class="red">$U$</span> é a <span class="bold">energia interna</span>; <span class="red">$\dot{m}$</span>, a <span class="bold">vazão mássica</span>; <span class="red">$h$</span>, a <span class="bold">entalpia</span> por unidade de massa; <span class="red">$\dot{Q}$</span>, a <span class="bold">taxa de calor</span>, definido por <span class="red">$\dot{Q} = U_C A (T_v - T_s)$</span>; e os subscritos são <span class="red">$e$</span>, para a corrente de entrada; e <span class="red">$s$</span>, para a corrente de saída; <span class="red">$T_v$</span> é a <span class="bold">temperatura do vapor</span>; e <span class="red">$A$</span> é a <span class="bold">área de troca térmica</span>.
+								</p>
+
+								<p class="animate__fadeInUp animate__slower">Com base nesses dados, assinale a opção que apresenta o valor aproximado da temperatura de saída do óleo após <span class="red">$100 \ \mathrm{s}$</span> de operação.
+								</p>
+							</div>	
+						</div>
+						
+						</div>
+				</section>
+
+				<!-- <section data-auto-animate>
+					<img src="reactor2.svg" class="drawing" width="400em"\>
+				</section> -->
+
+				<section data-auto-animate>
+					<div class="mathq">
+						<p class="fragment">
+						$$\frac{\mathrm{d}U}{\mathrm{d}t} = 
+							\sum{
+								\dot{m_\mathrm{e}} \ h_\mathrm{e}
+							}
+							-\sum{
+								\dot{m_\mathrm{s}} \ h_\mathrm{s}
+							}
+							+ \dot{Q}
+						$$
+						</p>
+
+						<p class="fragment">
+						$$\frac{\mathrm{d}U}{\mathrm{d}t} = 
+							\dot{m_\mathrm{e}} \ h_\mathrm{e}
+							-\dot{m_\mathrm{s}} \ h_\mathrm{s}
+						+ \dot{Q}
+						$$
+						</p>
+
+						<p class="fragment">
+						$$\frac{\mathrm{d}U}{\mathrm{d}t} = 
+						\dot{m} \ (h_\mathrm{e} - h_\mathrm{s})
+						+ \dot{Q}
+						$$	
+						</p>
+						
+						<p class="fragment">
+						$$\frac{\mathrm{d} (m_0 \ c_{\mathrm{p,óleo}} T) }{\mathrm{d}t} = 
+							\dot{m} \ c_{\mathrm{p,óleo}}(T_\mathrm{e}-T_\mathrm{s})
+						+ \dot{Q}
+						$$
+						</p>
+						
+						<p class="fragment">
+						$$\frac{\mathrm{d} (m_0 \ c_{\mathrm{p,óleo}} T_\mathrm{s}) }{\mathrm{d}t} = 
+						\dot{m} \ c_{\mathrm{p,óleo}}(T_\mathrm{e}-T_\mathrm{s})
+						+	U_C \ A \ (T_\mathrm{v}-T_\mathrm{s})
+						$$
+						</p>
+
+					</div>
+				</section>
+
+
+				<section data-auto-animate>
+					<div class="mathq">
+
+						<p>
+							$$\frac{\mathrm{d} (m_0 \ c_{\mathrm{p,óleo}} T_\mathrm{s}) }{\mathrm{d}t} = 
+							\dot{m} \ c_{\mathrm{p,óleo}}(T_\mathrm{e}-T_\mathrm{s})
+							+	U_C \ A \ (T_\mathrm{v}-T_\mathrm{s})
+							$$
+						</p>
+
+						<p class="fragment">
+						$$
+						m_0 \ c_{\mathrm{p,óleo}} \frac{\mathrm{d} T_\mathrm{s} }{\mathrm{d}t} = 
+						\dot{m} \ c_{\mathrm{p,óleo}}(T_\mathrm{e}-T_\mathrm{s})
+						+	U_C \ A \ (T_\mathrm{v}-T_\mathrm{s})
+						$$
+						</p>
+
+						<p class="fragment">
+						$$
+						m_0 \ c_{\mathrm{p,óleo}} \frac{\mathrm{d} T_\mathrm{s} }{\mathrm{d}t} = 
+						(\dot{m} \ c_{\mathrm{p,óleo}} \ T_\mathrm{e} + U_C \ A \ T_\mathrm{v})
+						-	(\dot{m} \ c_{\mathrm{p,óleo}} + U_C \ A) T_\mathrm{s}
+						$$
+						</p>
+
+						<p class="fragment">
+						$$
+						\frac{\mathrm{d} T_\mathrm{s} }{\mathrm{d}t} = 
+						\underbrace{\left(\frac{\dot{m} \ c_{\mathrm{p,óleo}} \ T_\mathrm{e} + U_C \ A \ T_\mathrm{v}}{m_0 \ c_{\mathrm{p,óleo}} }
+						\right)}_{a}
+						- \underbrace{\left(\frac{\dot{m} \ c_{\mathrm{p,óleo}} + U_C \ A}{m_0 \ c_{\mathrm{p,óleo}} }\right)}_{b} T_\mathrm{s}
+						$$
+						</p>
+
+						<p class="fragment">
+						$$
+						\frac{\mathrm{d} T_\mathrm{s} }{\mathrm{d}t} = a - b \ T_\mathrm{s}
+						$$
+						</p>
+					</div>
+				</section>
+
+				<section data-auto-animate>
+					<div class="mathq">
+
+						<p>
+						$$
+						\frac{\mathrm{d} T_\mathrm{s} }{\mathrm{d}t} = a - b \ T_\mathrm{s}
+						$$
+						</p>
+
+						<p class="fragment">
+						$$
+						\frac{\mathrm{d} T_\mathrm{s} }{a - b \ T_\mathrm{s}} = \mathrm{d}t 
+						$$
+						</p>
+
+						<p class="fragment">
+						$$
+						\int_{T_{0}}^{T_{\mathrm{s}}} {\frac{\mathrm{d} T'_\mathrm{s} }{a - b \ T'_\mathrm{s}}}= \int_{0}^{t}\mathrm{d}t' 
+						$$
+						</p>
+
+						<p class="fragment">
+						$$-\frac{1}{b} \ \ln \left(\frac{a-b \ T_{\mathrm{s}}}{a - b \ T_0}\right) = t$$
+						</p>
+
+						<p class="fragment">
+						$$
+						T_\mathrm{s} = \frac{-a + (a-b \ T_0)\exp(-bt)}{-b}
+						$$
+						</p>
+
+						<p class="fragment">
+						$$
+						T_\mathrm{s} = \frac{a - (a-b \ T_0)\exp(-bt)}{b}
+						$$
+						</p>
+					</div>
+				</section>
+
+				<section data-auto-animate>
+					<div class="mathq">
+						<p class="fragment">
+
+					$$a = \frac{\dot{m} \ c_{\mathrm{p,óleo}} \ T_\mathrm{e} + U_C \ A \ T_\mathrm{v}}{m_0 \ c_{\mathrm{p,óleo}} }$$
+						</p>
+
+						<p class="fragment">
+
+					$$a = \frac{3 \ \textcolor{LightCoral}{\mathrm{kg/s}} \times 1500\ \ \textcolor{LightCoral}{\mathrm{J\ kg^{-1} \ K^{-1}}} \times 20 \textcolor{LightCoral}{\mathrm{\degree C}} + 200 \ \textcolor{LightCoral}{\mathrm{W \ m^{-2} \ K^{-1}}} \\ \times 15 \ \textcolor{LightCoral}{\mathrm{m^2}} \times 120 \textcolor{LightCoral}{\mathrm{\degree C}}}{50 \ \textcolor{LightCoral}{\mathrm{kg}} \times 1500 \  \textcolor{LightCoral}{\mathrm{J\ kg^{-1} \ K^{-1}} }}$$
+						</p>
+
+						<p class="fragment">
+
+					$$a = 6 \ \textcolor{LightCoral}{\mathrm{J/s}}$$
+						</p>
+
+						<p class="fragment">
+
+					$$b = \frac{\dot{m} \ c_{\mathrm{p,óleo}} + U_C \ A}{m_0 \ c_{\mathrm{p,óleo}} }$$
+						</p>
+						<p class="fragment">
+
+					$$b = \frac{3 \ \textcolor{LightCoral}{\mathrm{kg/s}} \times 1{,}5\ \ \textcolor{LightCoral}{\mathrm{kJ\ kg^{-1} \ K^{-1}}} + 200 \ \textcolor{LightCoral}{\mathrm{W \ m^{-2} \ K^{-1}}} \times 15 \ \textcolor{LightCoral}{\mathrm{m^2}}}{50 \ \textcolor{LightCoral}{\mathrm{kg}} \times 1{,}5 \  \textcolor{LightCoral}{\mathrm{kJ\ kg^{-1} \ K^{-1}} }}$$
+						</p>
+						<p class="fragment">
+
+					$$b = 0{,}1 \ \textcolor{LightCoral}{\mathrm{s^{-1}}} $$
+						</p>
+					</div>
+				</section>
+
+				<section data-auto-animate>
+					<div class="mathq">
+						<p class="fragment">
+
+						$$
+						T_\mathrm{s} = \frac{a - (a-b \ T_0)\exp(-bt)}{b}
+						$$
+						</p>
+
+						<p class="fragment">
+
+						$$
+						T_\mathrm{s} = \frac{6 \ \textcolor{LightCoral}{\mathrm{J/s}} - (6 \ \textcolor{LightCoral}{\mathrm{J/s}}-0{,}1 \ \textcolor{LightCoral}{\mathrm{s^{-1}}} \times 20 \textcolor{LightCoral}{\mathrm{\degree C}})\exp(-0{,}1 \ \textcolor{LightCoral}{\mathrm{s^{-1}}} \times 100 \ \textcolor{LightCoral}{\mathrm{s}} )}{0{,}1 \ \textcolor{LightCoral}{\mathrm{s^{-1}}}}
+						$$
+						</p>
+						<p class="fragment">
+
+
+						$$
+						T_\mathrm{s} \approx 60 \textcolor{LightCoral}{\mathrm{\degree C}}
+						$$
+
+						</p>
+					</div>
+				</section>
 			</div>
 		</div>
 
@@ -25,16 +259,35 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script type="text/javascript" src="dist/reveal.js"></script>
+		<script src="/node_modules/reveal.js-appearance/plugin/appearance/appearance.js"></script>
+
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
+
 			Reveal.initialize({
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX, Appearance ]
 			});
+
+			Reveal.initialize({
+  mathjax3: {
+    mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+    tex: {
+      inlineMath: [ [ '$', '$' ], [ '\\(', '\\)' ]  ]
+    },
+    options: {
+      skipHtmlTags: [ 'script', 'noscript', 'style', 'textarea', 'pre' ]
+    },
+  },
+  plugins: [ RevealMath.MathJax3 ]
+});
+
 		</script>
 	</body>
 </html>

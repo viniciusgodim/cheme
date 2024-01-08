@@ -357,3 +357,47 @@ section.has-light-background, section.has-light-background h1, section.has-light
     background-color: var(--r-background-color);
   }
 }
+
+.drawing {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.question {
+  font-size: 18px;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.container{
+  display: flex;
+}
+
+.col{
+  flex: 2;
+}
+
+.red{
+  color: LightCoral;
+}
+
+.bold {
+  color: MediumPurple  ;
+}
+
+.mathq {
+  font-size: 25px;
+}
+
+.slides section .fragment { 
+  opacity: 0; 
+  visibility: hidden; 
+  transition: all 1.5s ease; }
+  
+  .slides section .fragment.visible {
+  
+  opacity: 1;
+  
+  visibility: inherit; }
