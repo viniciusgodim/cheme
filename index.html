@@ -36,14 +36,14 @@
 						<div class="col">
 							<div class="question">
 								<p class="animate__fadeInUp animate__slower">Inicialmente, esse tanque continha <span class="red">$m_0 = 50\ \mathrm{kg}$</span> de óleo a <span class="red">$20\ \mathrm{°C}$</span>. Então, as linhas de alimentação e descarga foram abertas, o que permitia o fluxo de óleo à <span class="bold">vazão</span> de <span class="red">$3\ \mathrm{kg/s}$</span>, mantendo-se, portanto, o nível do tanque constante. O <span class="bold">coeficiente global de troca térmica</span>, <span class="red">$U_C$</span> , sugerido pelo fabricante é de <span class="red">$200\ \mathrm{W \ m^{-2} \ K^{-1}}$</span>,
-								a área da camisa de vapor é de <span class="red">$15\ \mathrm{m^2}$</span> e a <span class="bold">capacidade calorífica do óleo</span>, <span class="red">$c_{\mathrm{p,óleo}}$</span> , é de <span class="red">$1{,}5\  \mathrm{kJ\ kg^{-1} \ K^{-1}}$</span>.
+								a área da camisa de vapor é de <span class="red">$15\ \mathrm{m^2}$</span> e a <span class="bold">capacidade calorífica do óleo</span>, <span class="red">$c_{p\mathrm{,óleo}}$</span> , é de <span class="red">$1{,}5\  \mathrm{kJ\ kg^{-1} \ K^{-1}}$</span>.
 								</p>
 
 								<p class="animate__fadeInUp animate__slower">O balanço de energia de um sistema sem reação, com variação desprezível de energia cinética e potencial e sem trabalho de eixo é dado por
 									
 								$$	\frac{\mathrm{d}U}{\mathrm{d}t} = 
 								\sum{
-									\dot{m_\mathrm{e}} \ h_\mathrm{e}
+									\dot{m_e} \ h_e
 								}
 								-\sum{
 									\dot{m_\mathrm{s}} \ h_\mathrm{s}
@@ -71,7 +71,7 @@
 						<p class="fragment">
 						$$\frac{\mathrm{d}U}{\mathrm{d}t} = 
 							\sum{
-								\dot{m_\mathrm{e}} \ h_\mathrm{e}
+								\dot{m_e} \ h_e
 							}
 							-\sum{
 								\dot{m_\mathrm{s}} \ h_\mathrm{s}
@@ -82,7 +82,7 @@
 
 						<p class="fragment">
 						$$\frac{\mathrm{d}U}{\mathrm{d}t} = 
-							\dot{m_\mathrm{e}} \ h_\mathrm{e}
+							\dot{m_e} \ h_e
 							-\dot{m_\mathrm{s}} \ h_\mathrm{s}
 						+ \dot{Q}
 						$$
@@ -90,22 +90,22 @@
 
 						<p class="fragment">
 						$$\frac{\mathrm{d}U}{\mathrm{d}t} = 
-						\dot{m} \ (h_\mathrm{e} - h_\mathrm{s})
+						\dot{m} \ (h_e - h_\mathrm{s})
 						+ \dot{Q}
 						$$	
 						</p>
 						
 						<p class="fragment">
-						$$\frac{\mathrm{d} (m_0 \ c_{\mathrm{p,óleo}} T) }{\mathrm{d}t} = 
-							\dot{m} \ c_{\mathrm{p,óleo}}(T_\mathrm{e}-T_\mathrm{s})
+						$$\frac{\mathrm{d} (m_0 \ c_{p\mathrm{,óleo}} T) }{\mathrm{d}t} = 
+							\dot{m} \ c_{p\mathrm{,óleo}}(T_e-T_s)
 						+ \dot{Q}
 						$$
 						</p>
 						
 						<p class="fragment">
-						$$\frac{\mathrm{d} (m_0 \ c_{\mathrm{p,óleo}} T_\mathrm{s}) }{\mathrm{d}t} = 
-						\dot{m} \ c_{\mathrm{p,óleo}}(T_\mathrm{e}-T_\mathrm{s})
-						+	U_C \ A \ (T_\mathrm{v}-T_\mathrm{s})
+						$$\frac{\mathrm{d} (m_0 \ c_{p\mathrm{,óleo}} T_s) }{\mathrm{d}t} = 
+						\dot{m} \ c_{p\mathrm{,óleo}}(T_e-T_s)
+						+	U_C \ A \ (T_v-T_s)
 						$$
 						</p>
 
@@ -117,40 +117,40 @@
 					<div class="mathq">
 
 						<p>
-							$$\frac{\mathrm{d} (m_0 \ c_{\mathrm{p,óleo}} T_\mathrm{s}) }{\mathrm{d}t} = 
-							\dot{m} \ c_{\mathrm{p,óleo}}(T_\mathrm{e}-T_\mathrm{s})
-							+	U_C \ A \ (T_\mathrm{v}-T_\mathrm{s})
+							$$\frac{\mathrm{d} (m_0 \ c_{p\mathrm{,óleo}} T_s) }{\mathrm{d}t} = 
+							\dot{m} \ c_{p\mathrm{,óleo}}(T_e-T_s)
+							+	U_C \ A \ (T_v-T_s)
 							$$
 						</p>
 
 						<p class="fragment">
 						$$
-						m_0 \ c_{\mathrm{p,óleo}} \frac{\mathrm{d} T_\mathrm{s} }{\mathrm{d}t} = 
-						\dot{m} \ c_{\mathrm{p,óleo}}(T_\mathrm{e}-T_\mathrm{s})
-						+	U_C \ A \ (T_\mathrm{v}-T_\mathrm{s})
+						m_0 \ c_{p\mathrm{,óleo}} \frac{\mathrm{d} T_s }{\mathrm{d}t} = 
+						\dot{m} \ c_{p\mathrm{,óleo}}(T_e-T_s)
+						+	U_C \ A \ (T_v-T_s)
 						$$
 						</p>
 
 						<p class="fragment">
 						$$
-						m_0 \ c_{\mathrm{p,óleo}} \frac{\mathrm{d} T_\mathrm{s} }{\mathrm{d}t} = 
-						(\dot{m} \ c_{\mathrm{p,óleo}} \ T_\mathrm{e} + U_C \ A \ T_\mathrm{v})
-						-	(\dot{m} \ c_{\mathrm{p,óleo}} + U_C \ A) T_\mathrm{s}
+						m_0 \ c_{p\mathrm{,óleo}} \frac{\mathrm{d} T_s }{\mathrm{d}t} = 
+						(\dot{m} \ c_{p\mathrm{,óleo}} \ T_e + U_C \ A \ T_v)
+						-	(\dot{m} \ c_{p\mathrm{,óleo}} + U_C \ A) T_s
 						$$
 						</p>
 
 						<p class="fragment">
 						$$
-						\frac{\mathrm{d} T_\mathrm{s} }{\mathrm{d}t} = 
-						\underbrace{\left(\frac{\dot{m} \ c_{\mathrm{p,óleo}} \ T_\mathrm{e} + U_C \ A \ T_\mathrm{v}}{m_0 \ c_{\mathrm{p,óleo}} }
+						\frac{\mathrm{d} T_s }{\mathrm{d}t} = 
+						\underbrace{\left(\frac{\dot{m} \ c_{p\mathrm{,óleo}} \ T_e + U_C \ A \ T_v}{m_0 \ c_{p\mathrm{,óleo}} }
 						\right)}_{a}
-						- \underbrace{\left(\frac{\dot{m} \ c_{\mathrm{p,óleo}} + U_C \ A}{m_0 \ c_{\mathrm{p,óleo}} }\right)}_{b} T_\mathrm{s}
+						- \underbrace{\left(\frac{\dot{m} \ c_{p\mathrm{,óleo}} + U_C \ A}{m_0 \ c_{p\mathrm{,óleo}} }\right)}_{b} T_s
 						$$
 						</p>
 
 						<p class="fragment">
 						$$
-						\frac{\mathrm{d} T_\mathrm{s} }{\mathrm{d}t} = a - b \ T_\mathrm{s}
+						\frac{\mathrm{d} T_s }{\mathrm{d}t} = a - b \ T_s
 						$$
 						</p>
 					</div>
@@ -161,35 +161,35 @@
 
 						<p>
 						$$
-						\frac{\mathrm{d} T_\mathrm{s} }{\mathrm{d}t} = a - b \ T_\mathrm{s}
+						\frac{\mathrm{d} T_s }{\mathrm{d}t} = a - b \ T_s
 						$$
 						</p>
 
 						<p class="fragment">
 						$$
-						\frac{\mathrm{d} T_\mathrm{s} }{a - b \ T_\mathrm{s}} = \mathrm{d}t 
+						\frac{\mathrm{d} T_s }{a - b \ T_s} = \mathrm{d}t 
 						$$
 						</p>
 
 						<p class="fragment">
 						$$
-						\int_{T_{0}}^{T_{\mathrm{s}}} {\frac{\mathrm{d} T'_\mathrm{s} }{a - b \ T'_\mathrm{s}}}= \int_{0}^{t}\mathrm{d}t' 
+						\int_{T_{0}}^{T_s} {\frac{\mathrm{d} T'_\mathrm{s} }{a - b \ T'_\mathrm{s}}}= \int_{0}^{t}\mathrm{d}t' 
 						$$
 						</p>
 
 						<p class="fragment">
-						$$-\frac{1}{b} \ \ln \left(\frac{a-b \ T_{\mathrm{s}}}{a - b \ T_0}\right) = t$$
+						$$-\frac{1}{b} \ \ln \left(\frac{a-b \ T_s}{a - b \ T_0}\right) = t$$
 						</p>
 
 						<p class="fragment">
 						$$
-						T_\mathrm{s} = \frac{-a + (a-b \ T_0)\exp(-bt)}{-b}
+						T_s = \frac{-a + (a-b \ T_0)\exp(-bt)}{-b}
 						$$
 						</p>
 
 						<p class="fragment">
 						$$
-						T_\mathrm{s} = \frac{a - (a-b \ T_0)\exp(-bt)}{b}
+						T_s = \frac{a - (a-b \ T_0)\exp(-bt)}{b}
 						$$
 						</p>
 					</div>
@@ -199,7 +199,7 @@
 					<div class="mathq">
 						<p class="fragment">
 
-					$$a = \frac{\dot{m} \ c_{\mathrm{p,óleo}} \ T_\mathrm{e} + U_C \ A \ T_\mathrm{v}}{m_0 \ c_{\mathrm{p,óleo}} }$$
+					$$a = \frac{\dot{m} \ c_{p\mathrm{,óleo}} \ T_e + U_C \ A \ T_v}{m_0 \ c_{p\mathrm{,óleo}} }$$
 						</p>
 
 						<p class="fragment">
@@ -214,7 +214,7 @@
 
 						<p class="fragment">
 
-					$$b = \frac{\dot{m} \ c_{\mathrm{p,óleo}} + U_C \ A}{m_0 \ c_{\mathrm{p,óleo}} }$$
+					$$b = \frac{\dot{m} \ c_{p\mathrm{,óleo}} + U_C \ A}{m_0 \ c_{p\mathrm{,óleo}} }$$
 						</p>
 						<p class="fragment">
 
@@ -232,21 +232,21 @@
 						<p class="fragment">
 
 						$$
-						T_\mathrm{s} = \frac{a - (a-b \ T_0)\exp(-bt)}{b}
+						T_s = \frac{a - (a-b \ T_0)\exp(-bt)}{b}
 						$$
 						</p>
 
 						<p class="fragment">
 
 						$$
-						T_\mathrm{s} = \frac{6 \ \textcolor{LightCoral}{\mathrm{J/s}} - (6 \ \textcolor{LightCoral}{\mathrm{J/s}}-0{,}1 \ \textcolor{LightCoral}{\mathrm{s^{-1}}} \times 20 \textcolor{LightCoral}{\mathrm{\degree C}})\exp(-0{,}1 \ \textcolor{LightCoral}{\mathrm{s^{-1}}} \times 100 \ \textcolor{LightCoral}{\mathrm{s}} )}{0{,}1 \ \textcolor{LightCoral}{\mathrm{s^{-1}}}}
+						T_s = \frac{6 \ \textcolor{LightCoral}{\mathrm{J/s}} - (6 \ \textcolor{LightCoral}{\mathrm{J/s}}-0{,}1 \ \textcolor{LightCoral}{\mathrm{s^{-1}}} \times 20 \textcolor{LightCoral}{\mathrm{\degree C}})\exp(-0{,}1 \ \textcolor{LightCoral}{\mathrm{s^{-1}}} \times 100 \ \textcolor{LightCoral}{\mathrm{s}} )}{0{,}1 \ \textcolor{LightCoral}{\mathrm{s^{-1}}}}
 						$$
 						</p>
 						<p class="fragment">
 
 
 						$$
-						T_\mathrm{s} \approx 60 \textcolor{LightCoral}{\mathrm{\degree C}}
+						T_s \approx 60 \textcolor{LightCoral}{\mathrm{\degree C}}
 						$$
 
 						</p>
